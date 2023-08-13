@@ -7,6 +7,7 @@ import { FeedbackOptions } from './components/FeedbackOptions';
 import { Section } from './components/Section';
 import { Notification } from './components/Notification';
 import { Wrapper } from 'components/styles/Container.styled.js';
+import { CoffeeImage } from 'components/Coffe.js';
 
 class App extends Component {
   state = {
@@ -26,7 +27,7 @@ class App extends Component {
     return totalFeedback === 0 ? 0 : (good / totalFeedback) * 100;
   };
 
-  handleFeedback = ({ feedbackType }) => {
+  handleFeedback = (feedbackType) => {
   this.setState(prevState => ({ [feedbackType]: prevState[feedbackType] + 1 }));
   };
 
@@ -34,11 +35,13 @@ class App extends Component {
     const { good, neutral, bad } = this.state;
     const totalFeedback = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
+    const shouldPulsate = true;
 
     return (
       <Layout>
         <Wrapper>
-          <Section title="Leave Feedback" shouldpulsate={true}>
+          <Section title="Leave feedback" shouldpulsate={shouldPulsate.toString()}>
+
             <FeedbackOptions
               options={['good', 'neutral', 'bad']}
               onLeaveFeedback={this.handleFeedback}
@@ -47,7 +50,10 @@ class App extends Component {
 
           <Section title="Statistics">
             {totalFeedback === 0 ? (
-              <Notification message="There is no feedback" />
+              <>
+                <Notification message="There is no feedback" />
+                <CoffeeImage/>
+              </>
             ) : (
               <Statistics
                 good={good}

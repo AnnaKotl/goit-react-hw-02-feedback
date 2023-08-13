@@ -4,7 +4,7 @@ export const FeedbackWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 18px;
   margin-top: 10px;
 `;
 
@@ -25,6 +25,7 @@ export const Button = styled.button`
   background: ${props => getColor(props.feedbacktype)};
   color: white;
   border: none;
+  border-radius: 4px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;

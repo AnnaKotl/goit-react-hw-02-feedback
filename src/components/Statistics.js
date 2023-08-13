@@ -1,9 +1,13 @@
+import { String, Total } from './styles/Statistics.styled.js';
+
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
-  <div>
+  <String>
     <p>Good: {good}</p>
     <p>Neutral: {neutral}</p>
     <p>Bad: {bad}</p>
-    <p>Total: {total}</p>
-    <p>Positive feedback: {positivePercentage.toFixed(2)}%</p>
-  </div>
+    <Total>
+      <p>Total: {total}</p>
+      <p>Positive feedback: {positivePercentage.toFixed(2)}%</p>
+    </Total>
+  </String>
 );
