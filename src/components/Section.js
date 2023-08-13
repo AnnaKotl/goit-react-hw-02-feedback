@@ -1,6 +1,8 @@
-export const Section = ({ title, children }) => (
+import { Title } from './styles/Section.styled';
+
+export const Section = ({ title, shouldpulsate, children }) => (
   <div>
-    <h2>{title}</h2>
+    <Title shouldpulsate={shouldpulsate ? 'true' : 'false'}>{title}</Title>
     {children}
   </div>
 );

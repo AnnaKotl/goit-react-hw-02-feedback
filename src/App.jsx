@@ -6,7 +6,7 @@ import { Statistics } from './components/Statistics';
 import { FeedbackOptions } from './components/FeedbackOptions';
 import { Section } from './components/Section';
 import { Notification } from './components/Notification';
-import { Wrapper } from 'components/styles/Container.js';
+import { Wrapper } from 'components/styles/Container.styled.js';
 
 class App extends Component {
   state = {
@@ -26,8 +26,8 @@ class App extends Component {
     return totalFeedback === 0 ? 0 : (good / totalFeedback) * 100;
   };
 
-  handleFeedback = feedbackType => {
-    this.setState(prevState => ({ [feedbackType]: prevState[feedbackType] + 1 }));
+  handleFeedback = ({ feedbackType }) => {
+  this.setState(prevState => ({ [feedbackType]: prevState[feedbackType] + 1 }));
   };
 
   render() {
@@ -38,7 +38,7 @@ class App extends Component {
     return (
       <Layout>
         <Wrapper>
-          <Section title="Leave Feedback">
+          <Section title="Leave Feedback" shouldpulsate={true}>
             <FeedbackOptions
               options={['good', 'neutral', 'bad']}
               onLeaveFeedback={this.handleFeedback}

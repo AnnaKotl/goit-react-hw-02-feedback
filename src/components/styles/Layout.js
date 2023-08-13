@@ -6,7 +6,7 @@ export const Layout = styled.main`
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   padding: 0 40px;
   max-width: 900px;
   margin: 0 auto;

@@ -11,19 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     font-style: normal;
     line-height: 1.5;
     color: #210a01;
-    background-image: radial-gradient(circle at 50% -20.71%, 
-        #e6f58f 0, 
-        #e9eb7f 10%, 
-        #ecdf6e 20%, 
-        #efd25d 30%, 
-        #f1c44d 40%, 
-        #f2b53c 50%, 
-        #f3a52d 60%, 
-        #f59522 70%, 
-        #f8851d 80%, 
-        #fa741e 90%, 
-        #fc6324 100%
-    );  
+    background-image: linear-gradient(180deg, #f4dc9b 0, #e7c985 25%, #d8b46c 50%, #c99f54 75%, #bd8d40 100%);
 }
 
     code {
