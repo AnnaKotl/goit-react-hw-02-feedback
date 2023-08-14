@@ -1,4 +1,4 @@
-import { Title } from './styles/Section.styled';
+import { Title } from './Section.styled';
 
 export const Section = ({ title, shouldpulsate, children }) => (
   <div>

@@ -1,4 +1,4 @@
-import { Coffe } from './styles/Coffe.styled.js';
+import { Coffe } from './Coffe.styled.js';
 
 export const CoffeeImage = () => {
   return (

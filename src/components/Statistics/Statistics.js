@@ -1,4 +1,4 @@
-import { String, Total } from './styles/Statistics.styled.js';
+import { String, Total } from './Statistics.styled.js';
 
 export const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
   <String>

@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { GlobalStyle } from './components/styles/GlobalStyle.js';
 import { Layout } from './components/styles/Layout.js';
 
-import { Statistics } from './components/Statistics';
-import { FeedbackOptions } from './components/FeedbackOptions';
-import { Section } from './components/Section';
-import { Notification } from './components/Notification';
+import { Statistics } from './components/Statistics/Statistics.js';
+import { FeedbackOptions } from './components/FeedbackOptions/FeedbackOptions';
+import { Section } from './components/Section/Section.js';
+import { Notification } from './components/Notification/Notification.js';
 import { Wrapper } from 'components/styles/Container.styled.js';
-import { CoffeeImage } from 'components/Coffe.js';
+import { CoffeeImage } from 'components/Coffe/Coffe.js';
 
 class App extends Component {
   state = {
