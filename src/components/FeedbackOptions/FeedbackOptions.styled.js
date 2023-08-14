@@ -39,7 +39,7 @@ export const Button = styled.button`
 
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 2px #db9642;
+    box-shadow: 0 0 0 2px #2c5e2f;
   }
 
   &:active {
