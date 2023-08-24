@@ -30,16 +30,12 @@ export const Button = styled.button`
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
+  outline: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-
-  &:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px #2c5e2f;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   }
 
   &:active {
